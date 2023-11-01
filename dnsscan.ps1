@@ -15,7 +15,7 @@ Start-Sleep -Seconds 1
 [System.Windows.Forms.SendKeys]::SendWait("$domain{ENTER}")
 
 Start-Process "https://whois.domaintools.com/"
-Start-Sleep -Seconds 1
+Start-Sleep -Seconds 2
 
 [Microsoft.VisualBasic.Interaction]::AppActivate("Brave")
 [System.Windows.Forms.SendKeys]::SendWait("$domain{ENTER}")
