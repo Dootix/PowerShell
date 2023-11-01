@@ -1,6 +1,9 @@
 
 # Simple PowerShell script that uses DNSdumpster, whois and nslookup against a given domain to gather basic info.
 
+Add-Type -AssemblyName 'Microsoft.VisualBasic'
+Add-Type -AssemblyName 'System.Windows.Forms'
+
 $domain = Read-Host -Prompt 'Domain to scan: '
 
 Resolve-DnsName $domain
