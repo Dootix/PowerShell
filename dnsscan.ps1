@@ -6,7 +6,7 @@ Add-Type -AssemblyName 'System.Windows.Forms'
 
 $domain = Read-Host -Prompt 'Domain to scan: '
 
-Resolve-DnsName $domain
+Resolve-DnsName -type ALL $domain
 
 Start-Process "https://dnsdumpster.com" 
 Start-Sleep -Seconds 1
